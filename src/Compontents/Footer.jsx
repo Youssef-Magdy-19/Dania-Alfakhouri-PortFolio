@@ -1,5 +1,4 @@
-// @ts-ignore
-import React from 'react'
+
 // @ts-ignore
 const logo = '/logo.png'
 import { Link } from 'react-router-dom'

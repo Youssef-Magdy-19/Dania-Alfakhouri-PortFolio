@@ -1,5 +1,5 @@
 import Servies from '../Compontents/Servies'
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import SomeProjects from '../Compontents/SomeProjects'
 import Contact from '../Compontents/Contact'
 import useWindowScrollToTop from '../hooks/useWindowScrollToTop'

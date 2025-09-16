@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { data } from '../data/data'
 import CardProject from '../Compontents/CardProject'
 import { AnimatePresence, motion } from 'framer-motion'
@@ -27,7 +27,6 @@ const itemVariants = {
 
 const Projects = () => {
   const [filterCategory, setFilterCategory] = useState(data)
-  const [category, setCategory] = useState('all')
   const { setIsLoading } = useLoading();
 
   useEffect(() => {
@@ -36,11 +35,8 @@ const Projects = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const handleFilterCategory = (category) => {
-    const newData = data.filter(item => item.category === category)
-    setFilterCategory(newData)
-  }
   useWindowScrollToTop()
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -69,7 +65,7 @@ const Projects = () => {
             className="projects grid grid-cols-1 md:grid-cols-2 gap-[1rem] mt-7"
           >
             {filterCategory.map((project, index) => (
-              <CardProject key={`${project.id} - ${category}`} img={project.img} title={project.title} desc={project.description} id={project.id} animation={itemVariants} />
+              <CardProject key={`${project.id}`} img={project.img} title={project.title} desc={project.description} id={project.id} animation={itemVariants} />
             ))}
           </motion.div>
         </AnimatePresence>

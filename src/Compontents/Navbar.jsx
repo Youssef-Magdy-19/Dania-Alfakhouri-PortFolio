@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 // @ts-ignore
 const logo = '/logo.png'
 import { Link, useLocation } from 'react-router-dom'
 // @ts-ignore
-import { Moon, Sun, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { HashLink } from 'react-router-hash-link'
 
 

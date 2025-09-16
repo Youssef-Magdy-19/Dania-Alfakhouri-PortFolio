@@ -1,7 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
-import { X } from "lucide-react";
+import { motion } from "framer-motion";
 import { data } from "../data/data";
 import CardProject from "../Compontents/CardProject";
 import { useLoading } from "../context/LoadingContext";
@@ -21,8 +20,6 @@ const itemVariants = {
 const ProjectDetails = () => {
   const { id } = useParams();
   const [projectData, setProjectData] = useState(null);
-  const [activeImage, setActiveImage] = useState(0);
-  const [isZoomOpen, setIsZoomOpen] = useState(false);
   const [relatedProjects, setRelatedProjects] = useState([])
   const { setIsLoading } = useLoading();
 
@@ -56,12 +53,6 @@ const ProjectDetails = () => {
   const fadeUp = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-  };
-
-  const modalAnim = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
-    exit: { opacity: 0, scale: 0.8, transition: { duration: 0.2 } },
   };
 
   if (!projectData) {

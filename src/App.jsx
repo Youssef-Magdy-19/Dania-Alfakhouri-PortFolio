@@ -4,7 +4,6 @@ import Navbar from "./Compontents/Navbar"
 import Home from "./Pages/Home"
 import Projects from "./Pages/Projects"
 import { Route, Routes } from "react-router-dom"
-import { useEffect, useState } from "react"
 import ProjectDetails from "./Pages/ProjectDetails"
 import { LoadingProvider } from "./context/LoadingContext";
 import GlobalLoader from "./Compontents/GolbalLoader"
@@ -28,7 +27,7 @@ function App() {
           <Route path="/*" element={<PageNotFound />} />
         </Routes>
         <GlobalLoader />
-        <Footer />
+        <Footer  />
       </LoadingProvider>
     </>
   )

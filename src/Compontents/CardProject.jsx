@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
-import React from 'react'
-import { Link, useNavigate } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 const CardProject = ({ img, title, desc, id, animation }) => {
@@ -16,9 +15,11 @@ const CardProject = ({ img, title, desc, id, animation }) => {
             onClick={() => navigate('/projects/' + id)}
             className='card flex flex-col relative w-full gap-[.5rem] shadow-md cursor-pointer'
         >
-            <img
-                loading='lazy'
+            <LazyLoadImage
+                loading="lazy"
                 src={img}
+                alt={title}
+                // effect='blur'
                 className='w-full h-[180px]'
                 onClick={() => navigate('/projects/' + id)}
             />
