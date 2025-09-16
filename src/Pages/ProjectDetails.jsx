@@ -96,16 +96,16 @@ const ProjectDetails = () => {
       {/* ✅ تفاصيل المشروع */}
       <motion.div
         style={{ marginTop: '30px', marginLeft: 'auto', marginRight: 'auto', paddingBottom: '20px' }}
-        className="project-details max-w-4xl text-gray-700 leading-7 border-b border-gray-300"
+        className="project-details  text-gray-700 leading-7 border-b border-gray-300"
         variants={fadeUp}
         initial="hidden"
         animate="visible"
         transition={{ delay: 0.5 }}
       >
-        <h2 className="text-xl font-semibold " style={{ marginBottom: '5px' }}>About the Project:</h2>
+        <h2 className="text-xl xl:text-2xl font-semibold " style={{ marginBottom: '5px' }}>About the Project:</h2>
         <div className="flex-col md:flex-row justify-between">
-          <p className="project-desc text-gray-600">Location : {projectData.Location}</p>
-          <p className="project-desc text-gray-600">
+          <p className="project-desc xl:text-lg text-gray-600">Location : {projectData.Location}</p>
+          <p className="project-desc xl:text-lg text-gray-600">
             {projectData.description}
           </p>
         </div>
@@ -118,10 +118,10 @@ const ProjectDetails = () => {
         animate="visible"
         transition={{ delay: 0.5 }}
       >
-        <h4 className="text-gray-700 text-xl font-semibold my-[15px]">Images For Project:</h4>
+        <h4 className="text-gray-700 text-xl xl:text-2xl font-semibold my-[15px]">Images For Project:</h4>
         <div
 
-          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[1rem] border-b border-gray-300 pb-[25px]"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1rem] border-b border-gray-300 pb-[25px]"
         >
           {images.map((img, key) => {
             return (
@@ -157,13 +157,13 @@ const ProjectDetails = () => {
       >
         <h4 className="text-xl font-semibold text-gray-700" style={{ marginBottom: "15px" }}>Related Projects</h4>
         {relatedProjects.length > 3 ?
-          <div className="Related-Projects grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[1rem]">
+          <div className="Related-Projects grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1rem]">
             {relatedProjects.slice(0, 4).map((project, index) => (
               <CardProject key={`${project.id}`} img={project.img} title={project.title} desc={project.description} id={project.id} animation={itemVariants} />
             ))
             }
           </div> :
-          <div className="Related-Projects grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[1rem]">
+          <div className="Related-Projects grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1rem]">
             {relatedProjects.slice(0, 4).map((project, index) => (
               <CardProject key={`${project.id}`} img={project.img} title={project.title} desc={project.description} id={project.id} animation={itemVariants} />
             ))

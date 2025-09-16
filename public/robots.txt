@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dania-alfakhouri.netlify.app/sitemap.xml 

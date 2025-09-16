@@ -62,7 +62,7 @@ const Projects = () => {
             initial="hidden"
             animate="visible"
             exit="hidden"
-            className="projects grid grid-cols-1 md:grid-cols-2 gap-[1rem] mt-7"
+            className="projects grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1rem] mt-7"
           >
             {filterCategory.map((project, index) => (
               <CardProject key={`${project.id}`} img={project.img} title={project.title} desc={project.description} id={project.id} animation={itemVariants} />
