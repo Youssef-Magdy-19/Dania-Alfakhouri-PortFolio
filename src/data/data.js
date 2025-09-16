@@ -119,7 +119,13 @@ const p112 = "/images/project11/p112.jpg";
 const p113 = "/images/project11/p113.jpg";
 const p114 = "/images/project11/p114.jpg";
 
-
+// Project 12
+const p121 = "/images/project12/p121.jpg";
+const p122 = "/images/project12/p122.jpg";
+const p123 = "/images/project12/p123.jpg";
+const p124 = "/images/project12/p124.jpg";
+const p125 = "/images/project12/p125.jpg";
+const p126 = "/images/project12/p126.jpg";
 
 export const data = [
     {
@@ -209,5 +215,13 @@ export const data = [
         Location : 'Riyadh, KSA',
         img: p111,
         images: [p111, p112, p113, p114 ],
+    },
+    {
+        id: 12,
+        title: 'research center', 
+        description: 'Software uses: Sketchup, 3D Max',
+        Location : 'Riyadh, KSA',
+        img: p121,
+        images: [p121, p122, p123, p124, p125, p126 ],
     },
 ]
