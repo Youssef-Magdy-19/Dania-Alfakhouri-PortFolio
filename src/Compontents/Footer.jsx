@@ -6,7 +6,7 @@ import { FaFacebookF, FaWhatsapp, FaInstagram } from 'react-icons/fa'
 
 
 const Footer = () => {
-  const whatsappNumber = "201020666116";
+  const whatsappNumber = "+966566164484";
   const whatsappLink = `https://wa.me/${whatsappNumber}`
   return (
     <footer className='w-full flex flex-col-reverse items-center md:flex-row md:justify-between md:items-center border-t border-t-gray-300' style={{ padding: "0px 20px", marginTop: '40px' }}>
@@ -16,7 +16,7 @@ const Footer = () => {
         <p className='text-gray-500 text-xs md:text-sm '>© 2025 Eng.Dania Alfakhouri Design. All rights reserved. | Developed by Eng.Youssef Magdy</p>
       </div>
       <div className={`footer-links flex gap-2 items-center justify-end  `}>
-        <a href='https://www.facebook.com/share/1AEQoCdaWL/' target='_blank' className='cursor-pointer border border-gray-300 rounded-full flex items-center justify-center w-8 h-8 ' >
+        <a href='#' target='_blank' className='cursor-pointer border border-gray-300 rounded-full flex items-center justify-center w-8 h-8 ' >
           <FaFacebookF className='w-5 h-5' />
         </a>
         <a href={whatsappLink} target='_blank' className='cursor-pointer border border-gray-300 rounded-full flex items-center justify-center w-8 h-8 ' >

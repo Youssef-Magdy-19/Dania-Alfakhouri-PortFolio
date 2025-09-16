@@ -53,7 +53,7 @@ const Projects = () => {
           className="title text-center"
         >
           <h1 className='text-4xl md:text-5xl font-bold' style={{ marginBottom: '15px' }}>My Projects</h1>
-          <p className='text-md md:text-base text-gray-500'>Explore a selection of outstanding projects we have completed for our clients, with the option to filter by the type of project you are looking for.</p>
+          <p className='text-md md:text-base text-gray-500'>Explore a selection of architectural and real estate development projects, showcasing residential, commercial, and hospitality designs delivered with creativity, precision, and compliance with Saudi Building Code.</p>
         </motion.div>
         
         <AnimatePresence mode='wait'>

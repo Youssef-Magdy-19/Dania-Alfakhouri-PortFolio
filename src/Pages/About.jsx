@@ -42,8 +42,8 @@ const whyChooseUsList = [
   "Over 9 years in design, supervision & real estate.",
   "Expert in BIM & AutoCAD with Saudi Code compliance.",
   "Leadership skills managing design & site teams.",
-  "Delivered major projects in housing, commercial & hospitality.",
-  "Strong academic base (Master’s in Real Estate Development)"
+  "Delivered projects in housing & hospitality.",
+  "Master’s in Real Estate Development."
 ]
 
 const AboutPage = () => {
@@ -79,10 +79,7 @@ const AboutPage = () => {
             className="aboutPage-desc text-gray-600 max-w-2xl"
             style={{ marginLeft: 'auto', marginRight: 'auto', }}
           >
-            I’m Dania Alfakhouri, a Architect with 9+ years of experience in architectural design, site supervision, and real
-            estate development. Skilled in BIM (Revit), AutoCAD, and Saudi Building Code compliance.
-            Proven ability to lead design teams, deliver schematic to IFC packages, and ensure QA/QC
-            on high-profile projects including residential, commercial, and hospitality developments.
+            Architect and Real Estate Development Specialist with 9+ years of experience in design, supervision, and consulting, delivering major projects across Riyadh and other Saudi cities.
           </p>
         </motion.div>
 
@@ -136,7 +133,7 @@ const AboutPage = () => {
           viewport={{ once: true }}
           // @ts-ignore
           variants={fadeUp}
-          style={{ padding: '35px 0' }}
+          style={{ padding: '35px 10px' }}
           className="Achievements bg-blue-50"
         >
           <div className="max-w-6xl text-center" style={{ margin: 'auto' }}>

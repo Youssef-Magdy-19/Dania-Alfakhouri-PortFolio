@@ -76,30 +76,6 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </nav>
-                    {/* button switch mode */}
-                    {/* <div className="flex gap-[1rem] items-center">
-                        
-                        {currentMode == 'light' ?
-                            <div className="btn-mode transition-all flex items-center justify-center text-gray-500 hover:text-yellow-500 border border-gray-400 cursor-pointer rounded-full w-[35px] h-[35px]"
-                                onClick={() => {
-                                    setCurrentMode(() => currentMode == 'light' ? 'dark' : 'light')
-                                    localStorage.setItem('currentMode', currentMode)
-                                }}
-                            >
-                                <Sun className="w-6 h-6" />
-                            </div>
-                            :
-                            <div className="btn-mode transition-all flex items-center justify-center text-gray-500 hover:text-white border border-gray-400 cursor-pointer rounded-full w-[35px] h-[35px]"
-                                onClick={() => {
-                                    setCurrentMode(() => currentMode == 'light' ? 'dark' : 'light')
-                                    localStorage.setItem('currentMode', currentMode)
-                                }}
-                            >
-                                <Moon className="w-6 h-6" />
-                            </div>
-                        }
-
-                    </div> */}
 
                 </div>
             </header>
@@ -109,12 +85,7 @@ const Navbar = () => {
 
             {/*  side bar  */}
             <aside ref={sidebarRef} className={`sidebar fixed z-50 top-0 bottom-0 left-0  w-[75%] min-h-screen duration-300 transition-all bg-white text-gray-800 shadow-lg transform transition-transform ease-in-out  ${isOpen ? 'translate-x-0' : '-translate-x-full'} `}>
-                {/* <button
-                    className={`fixed top-5 right-5 cursor-pointer text-gray-500 hover:text-red-600`}
-                    onClick={() => setIsOpen(false)}
-                >
-                    <X className="w-6 h-6" />
-                </button> */}
+            
                 <nav style={{ marginTop: '40px', padding: '10px 0px' }}>
                     <ul className='flex flex-col justify-center'>
                         <li style={{ padding: '12.5px' }}
@@ -141,7 +112,7 @@ const Navbar = () => {
                             className={`cursor-pointer hover:bg-gray-100 overflow-hidden ${location.pathname == '/about' ? 'resactive text-blue-500 font-semibold bg-blue-50' : 'text-gray-600'} hover:bg-blue-50 hover:text-blue-500 transition-all`}
                         >
                             <Link onClick={() => setIsOpen(false)}
-                                style={{ padding: '0 180px 0 0 ' }}
+                                style={{ padding: '0 160px 0 0 ' }}
                                 to="/about"
                             >
                                 About Us

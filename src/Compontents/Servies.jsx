@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 
 const Services = () => {
   const services = [
-    "Architectural Design & 3D Visualization (Residential, Commercial, Hospitality).",
-    "Site Supervision & QA/QC Compliance ensuring high-quality project execution.",
-    "Real Estate Development Consulting including feasibility studies and investment analysis.",
-    "BIM & AutoCAD Documentation (Schematic, Detailed, and IFC packages).",
-    "Client Liaison & Project Coordination to ensure smooth communication between all parties",
+    "Architectural Design & Visualization (Residential, Commercial, Hospitality).",
+    "Site Supervision & QA/QC for quality execution.",
+    "Real Estate Consulting with feasibility & investment studies.",
+    "BIM & AutoCAD Documentation (Schematic, Detailed, IFC).",
+    "Client Liaison & Coordination for smooth communication.",
   ];
 
   // Variants for animation
@@ -55,7 +55,7 @@ const Services = () => {
               custom={index}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <div className="w-[3px] bg-blue-400 mr-3"></div>
+              <div className="w-[5px] md:w-[4px] bg-blue-400 mr-[10px]"></div>
               <p className="text-lg font-semibold m-0 p-0 service-desc">{service}</p>
             </motion.div>
           ))}
